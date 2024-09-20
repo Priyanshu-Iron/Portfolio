@@ -1,0 +1,516 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: white;
+    position: fixed;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 10000;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #333333;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+.nav-links a:after{
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #53ed6a;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-links a:hover:after{
+    width: 100%;
+    left: 0;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333333;
+    transition: all 0.3s ease;
+}
+
+h1{
+    color: #333333;
+    font-size: 4rem;
+    text-align: center;
+}
+
+#nameh1{
+    font-size: 7rem;
+    color: #53ed6a;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #333333;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#projectButton{
+    margin-top: 50px;
+}
+
+.projectLinks,
+#resumeMain{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+#projectButton a,
+.projectLinks a,
+#resumeMain a,
+.btn-box button {
+  color: #333333;
+  padding: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 4px solid #333333;
+  border-radius: 50px;
+  background-color: white;
+  transition: background-color 0.3s ease 0s;
+}
+
+.projectLinks a,
+#resumeMain a,
+.btn-box button {
+  font-size: 0.8rem;
+  border: 2px solid #333333;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-right: 0px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#resumeMain {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#resumeMain{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#resmueMain a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.btn-box button{
+    cursor: pointer;
+    margin: 0;
+}
+
+#projectButton a:hover,
+.projectLinks a:hover,
+#resumeMain a:hover,
+.btn:hover{
+    background-color: #53ed6a;
+}
+
+.btn-submit:hover{
+    transform: none;
+}
+
+.projectLinks a img,
+.btn img{
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: 4.5px;
+    margin-left: 5px;
+}
+
+#resumeMain a img{
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: 4px;
+    margin-left: 5px;
+}
+
+#footer-links img{
+    width: 30px;
+    height: 30px;
+}
+
+#logo {
+    margin: 10px;
+    border: 4px solid black;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    transition: all 0.3s ease;
+}
+
+#logo:hover{
+    background-color: #53ed6a;
+}
+
+p {
+    color: #333333;
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 20px;
+    width: 600px;
+}
+
+.p-project{
+    width: 800px;
+}
+
+.p-tech{
+    padding-top: 0px;
+}
+
+#aboutMeTitle,
+#projectsTitle,
+#resumeTitle,
+#contactTitle{
+    padding-top: 100px;
+}
+
+#LifeScope{
+    padding-top: 50px;
+}
+
+.projectTitle{
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+#techTitle{
+    padding-bottom: 30px;
+}
+
+#hobbiesTitle{
+    padding-bottom: 10px;
+}
+
+#aboutMeMain,
+#hobbiesMain,
+#skillsMain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#skillsDiv,
+#hobbies,
+#LifeScope,
+#resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#aboutMe,
+#skillsDiv {
+    padding-bottom: 70px;
+}
+
+#skillsMain{
+    flex-direction: row;
+    width: 1000px;
+}
+
+a{
+    color: #333333;
+}
+
+a:visited{
+    color: #333333;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+#top{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#projects{
+    width: 100%;
+}
+
+button:hover{
+    transform: scale(1.25);
+}
+
+.navbarIcon:hover{
+    border: 3px solid #53ed6a;
+}
+
+#buttonAboutMe,
+#buttonProjects,
+#buttonResume,
+#buttonGithub,
+#buttonLinkedIn,
+#buttonContact{
+    background-color: transparent;
+    width: 64px;
+    height: 64px;
+    border: none;
+    transition: transform 03.s;
+}
+
+.navbarIcon{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+#selfpic {
+    width: 320px;
+    height: 320px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-image: url("/Assets/My_Pic.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 60px;
+    filter: grayscale(1);
+    transition: all 1s ease;
+    border: 5px solid #333333;
+    
+    /* Vendor prefixes for compatibility */
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+#selfpic:hover {
+    filter: grayscale(0);
+    background-color: #53ed6a;
+    transition: all 0.3s ease;
+    
+    /* Vendor prefixes for compatibility */
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+#hobbiesPics {
+    display: flex;
+    width: 320 px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hobbiesIcon{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+}
+
+#videogames {
+    background-image: url("/assets/Hobbies/game.png");
+}
+#travel {
+    background-image: url("/assets/Hobbies/travel.png");
+}
+#swim {
+    background-image: url("/assets/Hobbies/swim.png");
+}
+#run {
+    background-image: url("/assets/Hobbies/jog.png");
+}
+#tv {
+    background-image: url("/assets/Hobbies/tv.png");
+}
+#hp {
+    background-image: url("/assets/Hobbies/hp.png");
+}
+#pho {
+    background-image: url("/assets/Hobbies/noodles.png");
+}
+#sushi {
+    background-image: url("/assets/Hobbies/sushi.png");
+}
+
+.techDiv{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    border: 1px solid #333333;
+    margin: 6px;
+}
+
+.tech {
+    width: 64px;
+    max-height: 64px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.techDivTitle{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #333333;
+    color: white;
+    padding: 5px;
+}
+
+.tech img{
+    width: 64px;
+    max-height: 70px;
+}
+
+.tooltip{
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #53ed6a;
+    color: #333333;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip .tooltiptext::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #53ed6a transparent;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+

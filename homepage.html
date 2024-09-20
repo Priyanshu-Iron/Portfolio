@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="#top" id="logo">
+        P
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="#projects" id="linkProjects">PORTFOLIO</a></li>
+        <li><a href="#aboutMe" id="linkProjects">ABOUT</a></li>
+        <li><a href="#resume" id="linkProjects">RESUME</a></li>
+        <li><a href="#contact" id="linkProjects">CONTACT</a></li>
+        <li><a href="https://github.com/Priyanshu-Iron" id="linkProjects">GITHUB</a></li>
+        <li><a href="https://www.linkedin.com/in/priyanshu-singh-3a6777212/" id="linkProjects">LINKEDIN</a></li>
+    </ul>
+
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+  </nav>
+
+  <div id="top">
+    <div id="nameDiv">
+      <h2 id="helloh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="150"
+        data-aos="fade-up">Hello! My name is </h2>
+      <h1 id="nameh1" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="300"
+        data-aos="fade-up">
+        Priyanshu Singh.</h1>
+      <h2 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
+        data-aos="fade-up">
+        I'm a software engineer.</h2>
+    </div>
+    <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"
+      id="projectButton">
+      <a href="#projects">View Portfolio</a>
+    </div>
+  </div>
+
+  <div id="projects">
+    <div id="projectsTitle" data-aos="fade-up">
+      <h1>Portfolio</h1>
+    </div>
+
+    <div id="LifeScope" data-aos="fade-up">
+      <h1 class="projectTitle">LifeScope</h1>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <div class="LifeScopeSlides fade">
+
+          <div class="projectImage" id="LifeScopeslide1"></div>
+
+          <div class="text">The LifeScope project is a health management platform that streamlines communication 
+            and interactions among patients, physicians, and pharmacists for efficient healthcare management.</div>
+        </div>
+
+        <div class="LifeScopeSlides fade">
+
+          <div class="projectImage" id="LifeScopeslide2"></div>
+
+          <div class="text">LifeScope </div>
+        </div>
+
+        <div class="LifeScopeSlides fade">
+          <div class="projectImage" id="LifeScopeslide3"></div>
+
+          <div class="text">LifeScope</div>
+        </div>
+        <div class="LifeScopeSlides fade">
+          <div class="projectImage" id="LifeScopeslide4"></div>
+
+          <div class="text">LifeScope</div>
+        </div>
+        <div class="LifeScopeSlides fade">
+          <div class="projectImage" id="LifeScopeslide5"></div>
+
+          <div class="text">Developers </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="LifeScopeDots" onclick="currentSlide(1, 0)"></span>
+        <span class="LifeScopeDots" onclick="currentSlide(2, 0)"></span>
+        <span class="LifeScopeDots" onclick="currentSlide(3, 0)"></span>
+        <span class="LifeScopeDots" onclick="currentSlide(4, 0)"></span>
+        <span class="LifeScopeDots" onclick="currentSlide(5, 0)"></span>
+      </div>
+
+      <!-- Description of project -->
+      <div class="project-description">
+        <p class="p-project">
+            LifeScope is a comprehensive health management platform that facilitates seamless interaction among patients, physicians,
+            and pharmacists. Key features include patient health tracking, appointment scheduling, vitals monitoring, prescription management, and 
+            direct communication between stakeholders. The platform enhances efficiency, streamlines healthcare workflows, and improves overall patient care.
+        </p>
+        <p class="p-project p-tech">
+          Technologies: JavaScript, React Native, Redux, Expo, Sequelize, PostgreSQL, Node.js, Express, Edamam API,
+          Spoonacular API
+        </p>
+      </div>
+
+      <!-- Project Links -->
+
+      <div class="projectLinks">
+        <a href="http://lifescope-env.eba-jrxg3p4c.ap-south-1.elasticbeanstalk.com/Home%20Page.html" target="_blank">Try Demo <img src="/assets/externallink2.png" /></a>
+        <a href="https://github.com/Priyanshu-Iron/LifeScope" target="_blank">View Code <img
+            src="/assets/github3.png" /></a>
+        <a href=""
+          target="_blank">Watch Presentation <img src="" /></a>
+      </div>
+      </div>
+  </div>
+
+  <div id="aboutMe">
+    <div id="aboutMeTitle" data-aos="fade-up">
+      <h1>About Me</h1>
+    </div>
+          
+    <div id="aboutMeMain">
+      <div id="selfpic" data-aos="fade-up"></div>
+          
+      <p data-aos="fade-up" id="pIntro">
+        Driven to succeed, I'm Priyanshu Kumar Singh, studying Computer Applications with a focus on AI & Machine Learning. I'm mastering Full Stack web development and gearing up for Machine Learning. My goal is to become a skilled Machine Learning Engineer and MERN Stack developer.
+      </p>
+    </div>
+  </div>
+
+  <div id="skillsDiv">
+    <div id="techTitle" data-aos="fade-up">
+      <h3>Technologies I've Worked With</h3>
+    </div>
+
+    <div id="skillsMain">
+      <div class="techDiv" id="frontend" data-aos="fade-up">
+        <div class="techDivTitle">
+          Frontend
+        </div>
+        <div class="tech tooltip">
+          <img src="/Assets/htmllogo.png" alt="HTML" />
+          <span class="tooltiptext">HTML</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/Assets/csslogo.png" alt="CSS" />
+          <span class="tooltiptext">CSS</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/Assets/bootstraplogo.png" alt="Bootstrap" />
+          <span class="tooltiptext">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="techDiv" id="backend" data-aos="fade-up">
+        <div class="techDivTitle">
+          Backend
+        </div>
+        <div class="tech tooltip">
+          <img src="/Assets/nodejslogo.png" alt="Node.js" />
+          <span class="tooltiptext">Node.js</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/Assets/expressjslogo.png" alt="Express" />
+          <span class="tooltiptext">Express</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/Assets/socketiologo.png" alt="Socket.io" />
+          <span class="tooltiptext">Socket.io</span>
+        </div>
+      </div>
+
+      <div class="techDiv" id="devops" data-aos="fade-up">
+          <div class="techDivTitle">
+            DevOps
+          </div>
+          <div class="tech tooltip">
+            <img src="/Assets/gitlogo.png" alt="Git" />
+            <span class="tooltiptext">Git</span>
+          </div>
+          <div class="tech tooltip">
+            <img src="/Assets/githublogo.png" alt="Github" />
+            <span class="tooltiptext">Github</span>
+          </div>
+          <div class="tech tooltip">
+            <img src="/Assets/npmlogo.png" alt="npm" />
+            <span class="tooltiptext">npm</span>
+          </div>
+          <div class="tech tooltip">
+            <img src="/Assets/awsElasticBenstalklogo.png" alt="Heroku" />
+            <span class="tooltiptext">AWS Elastic Beanstalk</span>
+          </div>
+      </div>
+
+      <div class="techDiv" id="languages" data-aos="fade-up">
+          <div class="techDivTitle">
+            Languages
+          </div>
+          <div class="tech tooltip">
+            <img src="/Assets/jslogo.png" alt="JavaScript" />
+            <span class="tooltiptext">JavaScript</span>
+          </div>
+          <div class="tech tooltip">
+              <img src="/Assets/pythonlogo.png" alt="Python" />
+              <span class="tooltiptext">Python</span>
+          </div>
+          <div class="tech tooltip">
+            <img src="/Assets/clogo.png" alt="C" />
+            <span class="tooltiptext">C++</span>
+          </div>
+          <div class="tech tooltip">
+            <img src="/Assets/c++logo.png" alt="C++" />
+            <span class="tooltiptext">C++</span>
+          </div>
+      </div>
+
+      <div class="techDiv" id="tools" data-aos="fade-up">
+          <div class="techDivTitle">
+          Tools
+          </div>
+          <div class="tech tooltip">
+          <img src="/Assets/vscodelogo.png" alt="VS Code" />
+          <span class="tooltiptext">VS Code</span>
+          </div>
+          <div class="tech tooltip">
+          <img src="/Assets/postmanlogo.png" alt="Postman" />
+          <span class="tooltiptext">Postman</span>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hobbies">
+    <div id="hobbiesTitle" data-aos="fade-up">
+      <h3>Hobbies & Interests</h3>
+    </div>
+    <div id="hobbiesMain">
+      <div id="hobbiesPics">
+        <div class="hobbiesIcon" id="videogames" data-aos="flip-left" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="travel" data-aos="flip-left" data-aos-delay="150" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="swim" data-aos="flip-left" data-aos-delay="300" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="run" data-aos="flip-left" data-aos-delay="450" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="tv" data-aos="flip-left" data-aos-delay="600" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="hp" data-aos="flip-left" data-aos-delay="750" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="pho" data-aos="flip-left" data-aos-delay="900" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="sushi" data-aos="flip-left" data-aos-delay="1050" data-aos-anchor="#hobbiesPics"
+          data-aos-anchor-placment="top-center"></div>
+      </div>
+
+      <p data-aos="fade-up" id="p2">
+        Besides my passion for coding, I love to play video games, specifically RPGs and MMORPGs. I also love to travel,
+        swim, and jog. I'm a Netflix and Hulu binger. I am a huge fan of Harry Potter. On Wednesdays, you can find me
+        yelling at my TV when my favorite Survivor castaway gets voted off the island. My favorite foods are phở and
+        sushi.
+      </p>
+    </div>
+  </div>
+
+  <div id="resume">
+    <div id="resumeTitle" data-aos="fade-up">
+      <h1>Resume</h1>
+    </div>
+    <div id="resumeMain" data-aos="fade-up">
+      <a id="resumeView" href="/Assets/Final Resume.pdf" target="_blank">View Resume
+        <img src="/Assets/ViewRlogo.png" />
+      </a>
+      <a id="resumeDownload" href="/Assets/Final Resume.pdf" download>Download Resume
+        <img src="/Assets/downloadRlogo.png" />
+      </a>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div id="contactTitle" data-aos="fade-up">
+      <h1>Contact</h1>
+      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-aos="fade-up">
+        <div class="hidden">
+          <label>Fill this if you are not human: <input name="bot-field" /></label>
+        </div>
+        <div class="group">
+          <input type="text" name="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <label>Name</label>
+        </div>
+        <div class="group">
+          <input type="text" name="email" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <label>Email</label>
+        </div>
+        <div class="group">
+          <textarea type="textarea" name="message" rows="5" required="required"></textarea><span
+            class="highlight"></span><span class="bar"></span>
+          <label>Message</label>
+        </div>
+        <div class="btn-box">
+          <button class="btn btn-submit" type="submit">Send Message<img src="assets/paper-plane.png"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footer-links">
+      <a href="mailto:xyz@gmail.com"
+        onmouseover="this.href=this.href.replace(/[zyx]/g,'');" target="_blank">
+        <img src="/Assets/mailIcon.png">
+      </a>
+      <a href="https://www.linkedin.com/in/priyanshu-singh-3a6777212/" target="_blank">
+        <img src="/Assets/linkedinlogo.png">
+      </a>
+      <a href="https://github.com/Priyanshu-Iron" target="_blank">
+        <img src="/Assets/githubIcon.png">
+      </a>
+    </div>
+    <div id="copyright">&#169; <span id="year"></span> Priyanshu Singh. All rights reserved.</div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="text/javascript" src="/main.js"></script>
+
+</body>
+</html>
