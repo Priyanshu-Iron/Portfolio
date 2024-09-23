@@ -421,8 +421,8 @@ button:hover{
 #travel {
     background-image: url("/assets/Hobbies/travel.png");
 }
-#swim {
-    background-image: url("/assets/Hobbies/swim.png");
+#gym {
+    background-image: url("/assets/Hobbies/gym.png");
 }
 #run {
     background-image: url("/assets/Hobbies/jog.png");
@@ -433,11 +433,11 @@ button:hover{
 #hp {
     background-image: url("/assets/Hobbies/hp.png");
 }
-#pho {
-    background-image: url("/assets/Hobbies/noodles.png");
+#cod {
+    background-image: url("/assets/Hobbies/codlogo.png");
 }
-#sushi {
-    background-image: url("/assets/Hobbies/sushi.png");
+#ironman {
+    background-image: url("/assets/Hobbies/Ironman.png");
 }
 
 .techDiv{
@@ -514,3 +514,496 @@ button:hover{
     opacity: 1;
 }
 
+/* Slideshow container */
+.slideshow-container{
+    width: 800px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.LifeScope{
+    display: none;
+}
+
+.projectImage{
+    width: 800px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#LifeScopeSlide1{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide1.jpeg");
+}
+#LifeScopeSlide2{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide2.jpeg");
+}
+#LifeScopeSlide3{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide3.jpeg");
+}
+#LifeScopeSlide4{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide4.jpeg");
+}
+#LifeScopeSlide5{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide5.jpeg");
+}
+#LifeScopeSlide6{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide6.jpeg");
+}
+#LifeScopeSlide7{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide7.jpeg");
+}
+#LifeScopeSlide8{
+    background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide8.jpeg");
+} 
+
+/* Next & Previous Button */
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #53ed6a;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Position the "Next Button" to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Caption Text */
+.text{
+    color: #53ed6a;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.LifeScopeDots{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.LifeScopeDots:hover{
+    background-color: #53ed6a;
+}
+
+/* Fading Animation */
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade{
+    form{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+/* Form Styling */
+
+form{
+    width: 320px;
+    margin: 45px auto;
+}
+
+.group{
+    position: relative;
+    margin: 45px 0;
+}
+
+textarea{
+    resize: none;
+}
+
+input,textarea{
+    background: none;
+    color: #333333;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 320px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #333333;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label{
+    top: -14px;
+    font-size: 12px;
+    color: #333333;
+}
+
+input:focus ~ .bar::before,
+textarea:focus ~ .bar::before{
+    width: 320px;
+}
+
+label{
+    color: #969696;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 10px;
+    transition: 300ms ease all;
+}
+
+.bar{
+    position: relative;
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #333333;
+}
+
+.bar::before{
+    content: "";
+    height: 3px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #53ed6a;
+    transition: 300ms ease all;
+    left: 0%;
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    box-shadow: 0 0 0 30px white inset;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+    width: 320px;
+}
+
+#footer-links a{
+    transition: transform 0.2s ease-in-out;
+}
+
+#footer-links a:hover{
+    transform: scale(1.4);
+}
+
+@media only screen and(max-width: 1000px){
+    html{
+        scroll-behavior: smooth;
+    }
+    #skillsMain{
+        flex-direction: row;
+        width: 320;
+    }
+    #hobbiesMain{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .slideshow-container{
+        width: 100%;
+        height: 56.25vw;
+        position: relative;
+        margin: auto;
+    }
+}
+
+#LifeScope{
+    width: 100%;
+}
+
+.projectImage{
+    width: 100%;
+    /* height: 56.25vw; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-description{
+    width: 100%;
+}
+
+p.p-project{
+    width: 100%;
+    padding: 28px;
+    margin: 0px;
+}
+
+p.p-project.p-tech{
+    padding-top: 0px;
+}
+
+.projectLinks,
+#resumeMain{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.projectLinks a,
+#resumeMain a{
+    margin-bottom: 15px;
+}
+
+/* Mobile Styling */
+
+@media only screen and (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    #nameh1{
+        font-size: 3.5rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .projectTitle{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+    }
+    .nav-links{
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        height: calc(100vh - 70px);
+        top: 70px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border-left: 1px solid black;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    #projectButton a {
+        padding: 12px;
+        font-size: 1.1rem;
+        border: 3px solid #333333;
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate((-5px, 6px));
+    }
+    .toggle.line2{
+        opacity: 0;
+    }
+    .toggle.line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    p{
+        line-height: 1.6;
+        padding: 8px;
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    #skillsMain{
+        flex-direction: row;
+    }
+
+    .skills{
+        margin: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbarIcon{
+        width: 35px;
+        height: 35px;
+    }
+
+    #selfpic{
+        width: 240px;
+        height: 240px;
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    #hobbiesPics{
+        display: flex;
+        width: 320px;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .hobbiesIcon{
+        width: 70px;
+        height: 70px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 5px;
+    }
+
+    .slideshow-container{
+        width: 100%;
+        height: 100vw;
+        position: relative;
+        margin: auto;
+    }
+
+    .projectImage{
+        width: 100%;
+        height: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .project-description{
+        width: 100%;
+    }
+
+    p.p-project{
+        width: 100%;
+        padding: 28px;
+        margin: 0px;
+    }
+
+    p.p-project.p-tech{
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-height:600px) and (orientaion:landscape){
+    #helloh2{
+        padding-top: 70px;
+    }
+}
+
+@media only screen and(max-width:320px){
+    /* Form Styling */
+    form{
+        width: 300px;
+        margin: 45px auto;
+    }
+
+    input,
+    textarea{
+        background: none;
+        color: #333333;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #333333;
+    }
+
+    input:focus ~ .bar:before,
+    textarea:focus ~ .bar:before{
+        width: 300px;
+    }
+
+    .bar{
+        position: relative;
+        display: block;
+        width: 300px;
+        height: 1px;
+        background-color: #333333;
+    }
+}
