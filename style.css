@@ -416,28 +416,28 @@ button:hover{
 }
 
 #videogames {
-    background-image: url("/assets/Hobbies/game.png");
+    background-image: url("/Assets/Hobbies/game.png");
 }
 #travel {
-    background-image: url("/assets/Hobbies/travel.png");
+    background-image: url("/Assets/Hobbies/travel.png");
 }
 #gym {
-    background-image: url("/assets/Hobbies/gym.png");
+    background-image: url("/Assets/Hobbies/gym.png");
 }
 #run {
-    background-image: url("/assets/Hobbies/jog.png");
+    background-image: url("/Assets/Hobbies/jog.png");
 }
 #tv {
-    background-image: url("/assets/Hobbies/tv.png");
+    background-image: url("/Assets/Hobbies/tv.png");
 }
 #hp {
-    background-image: url("/assets/Hobbies/hp.png");
+    background-image: url("/Assets/Hobbies/hp.png");
 }
 #cod {
-    background-image: url("/assets/Hobbies/codlogo.png");
+    background-image: url("/Assets/Hobbies/codlogo.png");
 }
 #ironman {
-    background-image: url("/assets/Hobbies/Ironman.png");
+    background-image: url("/Assets/Hobbies/Ironman.png");
 }
 
 .techDiv{
