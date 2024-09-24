@@ -1,4 +1,6 @@
+require('dotenv').config()
 const nodemailer = require('nodemailer');
+
 
 exports.handler = async function (event, context) {
   // Check for POST request
