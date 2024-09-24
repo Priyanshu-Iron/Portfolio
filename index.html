@@ -308,27 +308,27 @@
   <div id="contact">
     <div id="contactTitle" data-aos="fade-up">
       <h1>Contact</h1>
-      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-aos="fade-up">
+      <form name="contact" method="POST" netlify-honeypot="bot-field" netlify data-netlify="true" data-aos="fade-up">
         <div class="hidden">
-          <label>Fill this if you are not human: <input name="bot-field" /></label>
+          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
         </div>
         <div class="group">
-          <input type="text" name="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <input type="text" name="name" required /><span class="highlight"></span><span class="bar"></span>
           <label>Name</label>
         </div>
         <div class="group">
-          <input type="text" name="email" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <input type="email" name="email" required /><span class="highlight"></span><span class="bar"></span>
           <label>Email</label>
         </div>
         <div class="group">
-          <textarea type="textarea" name="message" rows="5" required="required"></textarea><span
-            class="highlight"></span><span class="bar"></span>
+          <textarea name="message" rows="5" required></textarea><span class="highlight"></span><span class="bar"></span>
           <label>Message</label>
         </div>
         <div class="btn-box">
           <button class="btn btn-submit" type="submit">Send Message<img src="/Assets/MessageIcon.png"></button>
         </div>
       </form>
+      
     </div>
   </div>
 
@@ -351,7 +351,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script type="text/javascript" src="/main.js"></script>
   <script>
-      document.querySelector('form').addEventListener('submit', async function (event) {
+        document.querySelector('form').addEventListener('submit', async function (event) {
       event.preventDefault();
 
       const formData = new FormData(this);
