@@ -5,7 +5,7 @@
 node_modules
 ### ExpressionEngine ###
 .DS_Store
-
+cd.js
 # Images
 images/avatars/
 images/captchas/
