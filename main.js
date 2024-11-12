@@ -51,8 +51,8 @@ AOS.init({
   // index of each deck, initialized to first slide for each deck
   let slideIndex = [1, 1, 1];
   
-  let slideId = ["LifeScopeSlides","ErrediumSlides"];
-  let dotId = ["LifeScopeDots","ErrediumDots"];
+  let slideId = ["LifeScopeSlides","ErrediumSlides","MatrixSlides"];
+  let dotId = ["LifeScopeDots","ErrediumDots","MatrixDots"];
   showSlides(1, 0);
   showSlides(1, 1);
   showSlides(1, 2);

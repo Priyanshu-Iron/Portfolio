@@ -258,6 +258,10 @@ p {
     padding-top: 85px;
 }
 
+#Matrix{
+    padding-top: 120px;
+}
+
 .projectTitle{
     padding-bottom: 15px;
     font-size: 2.5rem;
@@ -529,7 +533,8 @@ button:hover{
 
 /* Hide the images by default */
 .LifeScope,
-.ErrediumSlides{
+.ErrediumSlides,
+.MatrixSlides{
     display: none;
 }
 
@@ -566,9 +571,17 @@ button:hover{
 #LifeScopeSlide8{
     background-image: url("/Assets/LifeScopeSlide/LifeScopeSlide8.jpeg");
 }
-
 #ErrediumSlide1{
     background-image: url("/Assets/Erredium/ErrediumSlides.png");
+}
+#MatrixSlide1{
+    background-image: url("/Assets/matrixslides/Screenshot\ 2024-11-12\ at\ 8.27.20\ PM.png");
+}
+#MatrixSlide2{
+    background-image: url("/Assets/matrixslides/Screenshot\ 2024-11-12\ at\ 8.27.29\ PM.png");
+}
+#MatrixSlide3{
+    background-image: url("/Assets/matrixslides/Screenshot\ 2024-11-12\ at\ 8.28.06\ PM.png");
 }
 
 /* Next & Previous Button */
@@ -609,7 +622,8 @@ button:hover{
 
 /* The dots/bullets/indicators */
 .LifeScopeDots,
-.ErrediumDots{
+.ErrediumDots,
+.MatrixDots{
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -623,7 +637,8 @@ button:hover{
 
 .active,
 .LifeScopeDots:hover,
-.ErrediumDots:hover{
+.ErrediumDots:hover,
+.MatrixDots:hover{
     background-color: #53ed6a;
 }
 
