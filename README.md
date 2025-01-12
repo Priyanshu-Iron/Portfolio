@@ -5,10 +5,10 @@
 This portfolio is a reflection of my tech journey, showcasing my projects, skills, and achievements. Built with a focus on simplicity and functionality, it represents my passion for web development and continuous learning.
 
 ## 🔗 Live Website
-[Visit my portfolio](https://lnkd.in/gEkzrgNd)
+[Visit my portfolio](https://priyanshuxsingh-portfolio.netlify.app/)
 
 ## 💻 GitHub Repository
-[Check out the code](https://lnkd.in/gQ5gAXRe)
+[Check out the code](https://github.com/Priyanshu-Iron/Portfolio)
 
 ## 📋 Features
 - **Built with:** HTML, CSS, and JavaScript
