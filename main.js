@@ -49,13 +49,14 @@ AOS.init({
   navSlide();
   
   // index of each deck, initialized to first slide for each deck
-  let slideIndex = [1, 1, 1];
+  let slideIndex = [1, 1, 1, 1];
   
-  let slideId = ["LifeScopeSlides","ErrediumSlides","MatrixSlides"];
-  let dotId = ["LifeScopeDots","ErrediumDots","MatrixDots"];
+  let slideId = ["LifeScopeSlides","ErrediumSlides","MatrixSlides","ChefMixtralSlides"];
+  let dotId = ["LifeScopeDots","ErrediumDots","MatrixDots","ChefMixtralDots"];
   showSlides(1, 0);
   showSlides(1, 1);
   showSlides(1, 2);
+  showSlides(1, 3);
   
   // Next/previous controls
   function plusSlides(n, no) {

@@ -3,8 +3,9 @@
 
 <head>
       <meta charset="UTF-8">
+      <link rel="icon" type="image/svg+xml" href="/Assets/icon.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portfolio</title>
+      <title>Priyanshu Portfolio</title>
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,7 +19,7 @@
     </a>
 
     <ul class="nav-links">
-        <li><a href="#projects" id="linkProjects">PORTFOLIO</a></li>
+        <li><a href="#projects" id="linkProjects">Projects</a></li>
         <li><a href="#aboutMe" id="linkProjects">ABOUT</a></li>
         <li><a href="#resume" id="linkProjects">RESUME</a></li>
         <li><a href="#contact" id="linkProjects">CONTACT</a></li>
@@ -42,7 +43,7 @@
         Priyanshu Singh.</h1>
       <h2 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
         data-aos="fade-up">
-        I'm a software engineer.</h2>
+        I'm a WebSite Developer.</h2>
     </div>
     <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"
       id="projectButton">
@@ -52,207 +53,337 @@
 
   <div id="projects">
     <div id="projectsTitle" data-aos="fade-up">
-      <h1>Portfolio</h1>
+      <h1 id="title">Projects</h1>
     </div>
 
-    <div id="LifeScope" data-aos="fade-up">
-      <h1 class="projectTitle">LifeScope</h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <div class="LifeScopeSlides fade">
-
-          <div class="projectImage" id="LifeScopeSlide1"></div>
-
-          <div class="text">The LifeScope project is a health management platform that streamlines communication 
-            and interactions among patients, physicians, and pharmacists for efficient healthcare management.</div>
+    <div>
+      <div class="tiles-container">
+        <!-- Tile 1 -->
+        <div class="card" onclick="openTile('tile1')">
+          <div class="preview">
+            <img src="/Assets/LifeScopeSlide/LifeScopeSlide1.jpeg" alt="">
+          </div>
+          <div class="card-content">
+            <h3>LifeScope</h3>
+            <p>A Health Care App.</p>
+          </div>
         </div>
-
-        <div class="LifeScopeSlides fade">
-          <div class="projectImage" id="LifeScopeSlide2"></div>
-          <div class="text">Signup</div>
+    
+        <!-- Tile 2 -->
+        <div class="card" onclick="openTile('tile2')">
+          <div class="preview">
+            <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1730207659/Untitled_video_-_Made_with_Clipchamp_lboywc.mp4" muted autoplay loop></video>
+          </div>
+          <div class="card-content">
+            <h3>Erredium</h3>
+            <p>A Gym Website.</p>
+          </div>
         </div>
-
-        <div class="LifeScopeSlides fade">
-          <div class="projectImage" id="LifeScopeSlide3"></div>
-          <div class="text">Patient Dashboard</div>
-        </div>
-
-        <div class="LifeScopeSlides fade">
-          <div class="projectImage" id="LifeScopeSlide4"></div>
-          <div class="text">Physician Dashboard</div>
-        </div>
-
-        <div class="LifeScopeSlides fade">
-          <div class="projectImage" id="LifeScopeSlide5"></div>
-          <div class="text">Add Medicine Page</div>
-        </div>
-
-        <div class="LifeScopeSlides fade">
-          <div class="projectImage" id="LifeScopeSlide6"></div>
-          <div class="text">Patient List View For Physician & Pharmacists</div>
-        </div>
-
-        <div class="LifeScopeSlides fade">
-          <div class="projectImage" id="LifeScopeSlide7"></div>
-          <div class="text">View Vitals Page for Patient,Physician & Pharmacists</div>
-        </div>
-
-        <div class="LifeScopeSlides fade">
-          <div class="projectImage" id="LifeScopeSlide8"></div>
-          <div class="text">User Form</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="LifeScopeDots" onclick="currentSlide(1, 0)"></span>
-        <span class="LifeScopeDots" onclick="currentSlide(2, 0)"></span>
-        <span class="LifeScopeDots" onclick="currentSlide(3, 0)"></span>
-        <span class="LifeScopeDots" onclick="currentSlide(4, 0)"></span>
-        <span class="LifeScopeDots" onclick="currentSlide(5, 0)"></span>
-        <span class="LifeScopeDots" onclick="currentSlide(6, 0)"></span>
-        <span class="LifeScopeDots" onclick="currentSlide(7, 0)"></span>
-        <span class="LifeScopeDots" onclick="currentSlide(8, 0)"></span>
-      </div>
-
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-            LifeScope is a comprehensive health management platform that facilitates seamless interaction among patients, physicians,
-            and pharmacists. Key features include patient health tracking, appointment scheduling, vitals monitoring, prescription management, and 
-            direct communication between stakeholders. The platform enhances efficiency, streamlines healthcare workflows, and improves overall patient care.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: HTML5,CSS,JavaScript,Express.js,MongoDB,GitHub,AWS Elastic Beanstalk
-        </p>
-      </div>
-
-      <!-- Project Links -->
-
-      <div class="projectLinks">
-        <a href="http://lifescope-env.eba-jrxg3p4c.ap-south-1.elasticbeanstalk.com/Home%20Page.html" target="_blank">Try Demo <img src="/Assets/linkIcon.png" /></a>
-        <a href="https://github.com/Priyanshu-Iron/LifeScope" target="_blank">View Code <img
-            src="/Assets/githublogo.png" /></a>
-        <a href="/Assets/Priyanshu Singh.pdf"
-          target="_blank">View Project Report<img src="/Assets/ReportIcon.png" /></a>
-      </div>
-      </div>
-
-    <div id="Erredium" data-aos="fade-up">
-      <h1 class="projectTitle">Erredium</h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <div class="ErrediumSlides fade">
-          <div class="projectImage" id="ErrediumSlide1"></div>
-          <div class="text">Erredium HomePage</div>
-        </div>
-
-        <div class="ErrediumSlides fade">
-          <div class="projectImage" id="ErrediumSlide2">
-            <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1730207659/Untitled_video_-_Made_with_Clipchamp_lboywc.mp4" autoplay muted width="800px" height="450px"></video>
+    
+        <!-- Tile 3 -->
+        <div class="card" onclick="openTile('tile3')">
+          <div class="preview">
+            <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1731424587/sdjybvc1uvqvqzmlozox.mp4" muted autoplay loop></video>
+          </div>
+          <div class="card-content">
+            <h3>Matrix</h3>
+            <p>A wallpaper Website.</p>
           </div>
         </div>
 
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="ErrediumDots" onclick="currentSlide(1, 1)"></span>
-        <span class="ErrediumDots" onclick="currentSlide(2, 1)"></span>
-      </div>
-
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-          Erredium is a modern gym website developed using React and Material UI, designed to inspire and empower fitness enthusiasts of all levels. This project serves as a platform for users to explore various fitness programs, understand membership plans, and learn about trainers, all in a sleek and user-friendly interface.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: React.js, Material Ui
-        </p>
-      </div>
-
-      <!-- Project Links -->
-
-      <div class="projectLinks">
-        <!-- <a href="" target="_blank">Try Demo <img src="/Assets/linkIcon.png" /></a> -->
-        <a href="https://github.com/Priyanshu-Iron/iridium-Fitness" target="_blank">View Code <img
-            src="/Assets/githublogo.png" /></a>
-        <!-- <a href="" target="_blank">View Project Report<img src="/Assets/ReportIcon.png" /></a> -->
-      </div>
-    </div>
-
-    <div id="Matrix" data-aos="fade-up">
-      <h1 class="projectTitle">Matrix</h1>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <div class="MatrixSlides fade">
-          <div class="projectImage" id="MatrixSlide1"></div>
-          <div class="text">Matrix Login Page</div>
-        </div>
-
-        <div class="MatrixSlides fade">
-          <div class="projectImage" id="MatrixSlide2"></div>
-          <div class="text">Matrix Signup Page</div>
-        </div>
-
-        <div class="MatrixSlides fade">
-          <div class="projectImage" id="MatrixSlide3"></div>
-          <div class="text">Matrix User HomePage</div>
-        </div>
-
-        <div class="MatrixSlides fade">
-          <div class="projectImage" id="MatrixSlide4">
-            <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1731424587/sdjybvc1uvqvqzmlozox.mp4" autoplay muted width="800px" height="450px"></video>
+        <!-- Tile 4 -->
+        <div class="card" onclick="openTile('tile4')">
+          <div class="preview">
+            <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1737700092/Screen_Recording_2025-01-24_at_11.55.39_AM_d7psnp.mov" muted autoplay loop></video>
+          </div>
+          <div class="card-content">
+            <h3>Chef-Mixtral</h3>
+            <p>A AI Recipe Website.</p>
           </div>
         </div>
-
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
       </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="MatrixDots" onclick="currentSlide(1, 2)"></span>
-        <span class="MatrixDots" onclick="currentSlide(2, 2)"></span>
-        <span class="MatrixDots" onclick="currentSlide(3, 2)"></span>
-        <span class="MatrixDots" onclick="currentSlide(4, 2)"></span>
+    
+      <!-- Big Tile 1 -->
+      <div class="big-tile" id="tile1">
+        <button class="close-btn" onclick="closeTile('tile1')">×</button>
+        <div id="LifeScope" data-aos="fade-up">
+          <h1 class="projectTitle">LifeScope</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+    
+            <div class="LifeScopeSlides fade">
+    
+              <div class="projectImage" id="LifeScopeSlide1"></div>
+    
+              <div class="text">The LifeScope project is a health management platform that streamlines communication 
+                and interactions among patients, physicians, and pharmacists for efficient healthcare management.</div>
+            </div>
+    
+            <div class="LifeScopeSlides fade">
+              <div class="projectImage" id="LifeScopeSlide2"></div>
+              <div class="text">Signup</div>
+            </div>
+    
+            <div class="LifeScopeSlides fade">
+              <div class="projectImage" id="LifeScopeSlide3"></div>
+              <div class="text">Patient Dashboard</div>
+            </div>
+    
+            <div class="LifeScopeSlides fade">
+              <div class="projectImage" id="LifeScopeSlide4"></div>
+              <div class="text">Physician Dashboard</div>
+            </div>
+    
+            <div class="LifeScopeSlides fade">
+              <div class="projectImage" id="LifeScopeSlide5"></div>
+              <div class="text">Add Medicine Page</div>
+            </div>
+    
+            <div class="LifeScopeSlides fade">
+              <div class="projectImage" id="LifeScopeSlide6"></div>
+              <div class="text">Patient List View For Physician & Pharmacists</div>
+            </div>
+    
+            <div class="LifeScopeSlides fade">
+              <div class="projectImage" id="LifeScopeSlide7"></div>
+              <div class="text">View Vitals Page for Patient,Physician & Pharmacists</div>
+            </div>
+    
+            <div class="LifeScopeSlides fade">
+              <div class="projectImage" id="LifeScopeSlide8"></div>
+              <div class="text">User Form</div>
+            </div>
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          </div>
+          <br>
+    
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="LifeScopeDots" onclick="currentSlide(1, 0)"></span>
+            <span class="LifeScopeDots" onclick="currentSlide(2, 0)"></span>
+            <span class="LifeScopeDots" onclick="currentSlide(3, 0)"></span>
+            <span class="LifeScopeDots" onclick="currentSlide(4, 0)"></span>
+            <span class="LifeScopeDots" onclick="currentSlide(5, 0)"></span>
+            <span class="LifeScopeDots" onclick="currentSlide(6, 0)"></span>
+            <span class="LifeScopeDots" onclick="currentSlide(7, 0)"></span>
+            <span class="LifeScopeDots" onclick="currentSlide(8, 0)"></span>
+          </div>
+    
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+                LifeScope is a comprehensive health management platform that facilitates seamless interaction among patients, physicians,
+                and pharmacists. Key features include patient health tracking, appointment scheduling, vitals monitoring, prescription management, and 
+                direct communication between stakeholders. The platform enhances efficiency, streamlines healthcare workflows, and improves overall patient care.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: HTML5,CSS,JavaScript,Express.js,MongoDB,GitHub,AWS Elastic Beanstalk
+            </p>
+          </div>
+    
+          <!-- Project Links -->
+    
+          <div class="projectLinks">
+            <a href="http://lifescope-env.eba-jrxg3p4c.ap-south-1.elasticbeanstalk.com/Home%20Page.html" target="_blank">Try Demo <img src="/Assets/linkIcon.png" /></a>
+            <a href="https://github.com/Priyanshu-Iron/LifeScope" target="_blank">View Code <img
+                src="/Assets/githublogo.png" /></a>
+            <a href="/Assets/Priyanshu Singh.pdf"
+              target="_blank">View Project Report<img src="/Assets/ReportIcon.png" /></a>
+          </div>
+          </div>
+      </div>
+    
+      <!-- Big Tile 2 -->
+      <div class="big-tile" id="tile2">
+        <button class="close-btn" onclick="closeTile('tile2')">×</button>
+        <div id="Erredium" data-aos="fade-up">
+          <h1 class="projectTitle">Erredium</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+    
+            <div class="ErrediumSlides fade">
+              <div class="projectImage" id="ErrediumSlide1"></div>
+              <div class="text">Erredium HomePage</div>
+            </div>
+    
+            <div class="ErrediumSlides fade">
+              <div class="projectImage" id="ErrediumSlide2">
+                <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1730207659/Untitled_video_-_Made_with_Clipchamp_lboywc.mp4" autoplay muted width="800px" height="450px"></video>
+              </div>
+            </div>
+    
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+          </div>
+          <br>
+    
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="ErrediumDots" onclick="currentSlide(1, 1)"></span>
+            <span class="ErrediumDots" onclick="currentSlide(2, 1)"></span>
+          </div>
+    
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              Erredium is a modern gym website developed using React and Material UI, designed to inspire and empower fitness enthusiasts of all levels. This project serves as a platform for users to explore various fitness programs, understand membership plans, and learn about trainers, all in a sleek and user-friendly interface.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: React.js, Material Ui
+            </p>
+          </div>
+    
+          <!-- Project Links -->
+    
+          <div class="projectLinks">
+            <!-- <a href="" target="_blank">Try Demo <img src="/Assets/linkIcon.png" /></a> -->
+            <a href="https://github.com/Priyanshu-Iron/iridium-Fitness" target="_blank">View Code <img
+                src="/Assets/githublogo.png" /></a>
+            <!-- <a href="" target="_blank">View Project Report<img src="/Assets/ReportIcon.png" /></a> -->
+          </div>
+        </div>
+      </div>
+    
+      <!-- Big Tile 3 -->
+      <div class="big-tile" id="tile3">
+        <button class="close-btn" onclick="closeTile('tile3')">×</button>
+        <div id="Matrix" data-aos="fade-up">
+          <h1 class="projectTitle">Matrix</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+    
+            <div class="MatrixSlides fade">
+              <div class="projectImage" id="MatrixSlide1"></div>
+              <div class="text">Matrix Login Page</div>
+            </div>
+    
+            <div class="MatrixSlides fade">
+              <div class="projectImage" id="MatrixSlide2"></div>
+              <div class="text">Matrix Signup Page</div>
+            </div>
+    
+            <div class="MatrixSlides fade">
+              <div class="projectImage" id="MatrixSlide3"></div>
+              <div class="text">Matrix User HomePage</div>
+            </div>
+    
+            <div class="MatrixSlides fade">
+              <div class="projectImage" id="MatrixSlide4">
+                <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1731424587/sdjybvc1uvqvqzmlozox.mp4" autoplay muted width="800px" height="450px"></video>
+              </div>
+            </div>
+    
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+          </div>
+          <br>
+    
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="MatrixDots" onclick="currentSlide(1, 2)"></span>
+            <span class="MatrixDots" onclick="currentSlide(2, 2)"></span>
+            <span class="MatrixDots" onclick="currentSlide(3, 2)"></span>
+            <span class="MatrixDots" onclick="currentSlide(4, 2)"></span>
+          </div>
+    
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              The Matrix-inspired wallpaper website offers a unique collection of wallpapers for users to explore and customize, allowing them to create their own virtual space. The site includes features like secure user authentication, enabling users to save and personalize their preferences. The project is hosted on Vercel for seamless, scalable deployment, ensuring an efficient user experience.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: Express.js, EJS, Tailwind CSS, Passport.js, Cloudinary, Vercel
+            </p>
+          </div>
+    
+          <!-- Project Links -->
+    
+          <div class="projectLinks">
+            <a href="https://matrix-coral-beta.vercel.app/" target="_blank">Try Demo <img src="/Assets/linkIcon.png" /></a>
+            <a href="https://github.com/Priyanshu-Iron/Matrix" target="_blank">View Code <img
+                src="/Assets/githublogo.png" /></a>
+            <a href="https://github.com/Priyanshu-Iron/Matrix/blob/main/readme.md" target="_blank">View Project Report<img src="/Assets/ReportIcon.png" /></a>
+          </div>
+        </div>
       </div>
 
-      <!-- Description of project -->
-      <div class="project-description">
-        <p class="p-project">
-          The Matrix-inspired wallpaper website offers a unique collection of wallpapers for users to explore and customize, allowing them to create their own virtual space. The site includes features like secure user authentication, enabling users to save and personalize their preferences. The project is hosted on Vercel for seamless, scalable deployment, ensuring an efficient user experience.
-        </p>
-        <p class="p-project p-tech">
-          Technologies: Express.js, EJS, Tailwind CSS, Passport.js, Cloudinary, Vercel
-        </p>
+      <!-- Big Tile 4 -->
+      <div class="big-tile" id="tile4">
+        <button class="close-btn" onclick="closeTile('tile4')">×</button>
+        <div id="ChefMixtral" data-aos="fade-up">
+          <h1 class="projectTitle">Chef-Mixtral</h1>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+    
+            <div class="ChefMixtralSlides fade">
+              <div class="projectImage" id="ChefMixtralSlide1"></div>
+              <div class="text">Chef-Mixtral Home Page</div>
+            </div>
+    
+            <div class="ChefMixtralSlides fade">
+              <div class="projectImage" id="ChefMixtralSlide2"></div>
+              <div class="text">Chef-Mixtral Recommended Recipe</div>
+            </div>
+    
+            <div class="ChefMixtralSlides fade">
+              <div class="projectImage" id="ChefMixtralSlide3">
+                <video src="https://res.cloudinary.com/dkslm53fp/video/upload/v1737700092/Screen_Recording_2025-01-24_at_11.55.39_AM_d7psnp.mov" autoplay muted width="800px" height="450px"></video>
+              </div>
+            </div>
+    
+    
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+          </div>
+          <br>
+    
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="ChefMixtralDots" onclick="currentSlide(1, 3)"></span>
+            <span class="ChefMixtralDots" onclick="currentSlide(2, 3)"></span>
+            <span class="ChefMixtralDots" onclick="currentSlide(3, 3)"></span>
+          </div>
+    
+          <!-- Description of project -->
+          <div class="project-description">
+            <p class="p-project">
+              Chef Mixtral is an AI-powered recipe page that utilizes the Hugging Face AI Model Mixtral to generate and manage interactive recipes. Built with React and Vite, this project demonstrates the use of state, props, and other modern React concepts to create a dynamic user experience.
+            </p>
+            <p class="p-project p-tech">
+              Technologies: React.js, Huggingface.
+            </p>
+          </div>
+    
+          <!-- Project Links -->
+    
+          <div class="projectLinks">
+            <a href="https://chef-mixtral.netlify.app/" target="_blank">Try Demo <img src="/Assets/linkIcon.png" /></a>
+            <a href="https://github.com/Priyanshu-Iron/Chef-Mixtral" target="_blank">View Code <img
+                src="/Assets/githublogo.png" /></a>
+            <a href="https://github.com/Priyanshu-Iron/Chef-Mixtral/blob/master/README.md" target="_blank">View Project Report<img src="/Assets/ReportIcon.png" /></a>
+          </div>
+        </div>
       </div>
-
-      <!-- Project Links -->
-
-      <div class="projectLinks">
-        <a href="https://matrix-coral-beta.vercel.app/" target="_blank">Try Demo <img src="/Assets/linkIcon.png" /></a>
-        <a href="https://github.com/Priyanshu-Iron/Matrix" target="_blank">View Code <img
-            src="/Assets/githublogo.png" /></a>
-        <!-- <a href="" target="_blank">View Project Report<img src="/Assets/ReportIcon.png" /></a> -->
-      </div>
+    
+      <script>
+        function openTile(tileId) {
+          document.getElementById(tileId).style.display = 'block';
+        }
+    
+        function closeTile(tileId) {
+          document.getElementById(tileId).style.display = 'none';
+        }
+      </script>
     </div>
+
   </div>
 
   <div id="aboutMe">
@@ -294,6 +425,10 @@
         <div class="tech tooltip">
           <img src="/Assets//tailwindcss.png" alt="Bootstrap" />
           <span class="tooltiptext">Tailwind css</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/Assets/icons8-react-js-96.png" alt="Bootstrap" />
+          <span class="tooltiptext">React.js</span>
         </div>
       </div>
 
@@ -349,14 +484,14 @@
               <img src="/Assets/pythonlogo.png" alt="Python" />
               <span class="tooltiptext">Python</span>
           </div>
-          <div class="tech tooltip">
+          <!-- <div class="tech tooltip">
             <img src="/Assets/clogo.png" alt="C" />
-            <span class="tooltiptext">C++</span>
+            <span class="tooltiptext">C</span>
           </div>
           <div class="tech tooltip">
             <img src="/Assets/c++logo.png" alt="C++" />
             <span class="tooltiptext">C++</span>
-          </div>
+          </div> -->
       </div>
 
       <div class="techDiv" id="tools" data-aos="fade-up">
@@ -370,6 +505,10 @@
           <div class="tech tooltip">
           <img src="/Assets/postmanlogo.png" alt="Postman" />
           <span class="tooltiptext">Postman</span>
+          </div>
+          <div class="tech tooltip">
+          <img src="/Assets/mongodb.png" alt="Postman" />
+          <span class="tooltiptext">MongoDB</span>
           </div>
       </div>
     </div>

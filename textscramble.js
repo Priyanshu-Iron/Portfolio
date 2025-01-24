@@ -56,14 +56,14 @@ class TextScramble {
   
   const phrases = [
     // "Hello! 👋🏽",
-    // "My name is Chris. ",
+    // "My name is Priyanshu. ",
     // "I'm a software engineer. 👨🏽‍💻",
     // "I develop websites 🖥️ 💻, ",
     // "mobile apps 📱, ",
     // "and video games 🎮. ",
     // ""
     // "Hello!",
-    // "My name is Chris.",
+    // "My name is Priyanshu.",
     "I'm a software engineer.",
     "I develop websites,",
     "mobile apps,",

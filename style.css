@@ -250,18 +250,6 @@ p {
     padding-top: 100px;
 }
 
-#LifeScope{
-    padding-top: 50px;
-}
-
-#Erredium{
-    padding-top: 85px;
-}
-
-#Matrix{
-    padding-top: 120px;
-}
-
 .projectTitle{
     padding-bottom: 15px;
     font-size: 2.5rem;
@@ -450,7 +438,7 @@ button:hover{
 }
 
 .techDiv{
-    width: 320px;
+    width: 400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -534,7 +522,8 @@ button:hover{
 /* Hide the images by default */
 .LifeScope,
 .ErrediumSlides,
-.MatrixSlides{
+.MatrixSlides,
+.ChefMixtralSlides{
     display: none;
 }
 
@@ -583,6 +572,12 @@ button:hover{
 #MatrixSlide3{
     background-image: url("/Assets/matrixslides/Screenshot\ 2024-11-12\ at\ 8.28.06\ PM.png");
 }
+#ChefMixtralSlide1{
+    background-image: url("/Assets//ChefMixtralSlide/ChefMixtralSlide1.png");
+}
+#ChefMixtralSlide2{
+    background-image: url("/Assets//ChefMixtralSlide/ChefMixtralSlide2.png");
+}
 
 /* Next & Previous Button */
 .prev,
@@ -623,7 +618,8 @@ button:hover{
 /* The dots/bullets/indicators */
 .LifeScopeDots,
 .ErrediumDots,
-.MatrixDots{
+.MatrixDots,
+.ChefMixtralDots{
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -638,7 +634,8 @@ button:hover{
 .active,
 .LifeScopeDots:hover,
 .ErrediumDots:hover,
-.MatrixDots:hover{
+.MatrixDots:hover,
+.ChefMixtralDots:hover{
     background-color: #53ed6a;
 }
 
@@ -800,7 +797,9 @@ footer{
 }
 
 #LifeScope,
-#Erredium{
+#Erredium,
+#Matrix,
+#ChefMixtral{
     width: 100%;
 }
 
@@ -1035,3 +1034,98 @@ p.p-project.p-tech{
         background-color: #333333;
     }
 }
+
+/* Project Card */
+.tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 300px;
+    height: 250px;
+    background-color: #ffffff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px #53ed6a;
+  }
+
+  .preview {
+    width: 100%;
+    height: 150px;
+    background-color: #000;
+  }
+
+  .preview img,
+  .preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .big-tile {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    background-color: #53ed6a;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 20px;
+    overflow: auto;
+  }
+
+  .big-tile h1 {
+    margin-top: 0;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    color: #53ed6a;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .close-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  /* Title */
+  #title{
+    padding-bottom: 40px;
+  }
